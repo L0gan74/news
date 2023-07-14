@@ -1,0 +1,32 @@
+.form {
+  border: 1px solid #656e7a;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 50px 0;
+}
+
+.form input{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0 10px 15px;
+    color: black;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form button{
+    width: 160px;
+    height: 40px;
+    border-radius: 60px;
+    background: #38e3ba;
+    color: #000;
+    font-size: 14px;
+    line-height: 21.6px;
+    letter-spacing: -0.12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,22 @@
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.category button {
+  border-radius: 60px;
+  background: #2e3238;
+  width: 200px;
+  height: 55px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 21.6px;
+  transition: all 0.8s;
+}
+
+.category button:hover {
+  box-shadow: 0 0 10px white;
+}

@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: block;
+  font-family: "Inter", sans-serif;
+  background: #212429;
+  color: #fff;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration-line: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a:hover {
+  color: black;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: block;
+}
+
+.container {
+  max-width: 1162px;
+  margin: 0 auto;
+}
+
+.active {
+  border-bottom: 1px solid white;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 21.6px;
+  letter-spacing: 0.8px;
+  padding: 69px 0 56px 0;
+}
+
+.all-news {
+  border-radius: 60px;
+  background: #2e3238;
+  width: 219px;
+  height: 60px;
+  margin: 100px auto 63px auto;
+  color: #fff;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 21.6px;
+  transition: all 0.8s;
+}
+
+.all-news:hover {
+  box-shadow: 0 0 10px white;
+}
+
+.activeBtn {
+  background: #52bfa5 !important;
+}
+
+.burger-icon {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  z-index: 6;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.burger-icon span {
+  display: block;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.open .burger-icon span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.open .burger-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.open .burger-icon span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.menu-items {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #212429;
+  padding: 80px 0 0 0;
+  display: none;
+}
+
+.menu-items li {
+  text-align: center;
+}
+
+.menu-items a {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.6px;
+  padding-top: 25px;
+  letter-spacing: -0.4px;
+}
+
+.open .menu-items {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100vh;
+  z-index: 5;
+}
+
+.menu-open {
+  overflow: hidden;
+}
+
+.burger-menu {
+  display: none;
+}
+
+main {
+  padding: 0 15px;
+}
+
+@media (max-width: 992px) {
+  .burger-menu {
+    display: block;
+  }
+  main {
+    padding: 0 10px;
+  }
+}
